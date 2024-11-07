@@ -10,10 +10,10 @@ export const environment = {
         measurementId: "G-S6VCLVE1GZ"
       },
     api:{
-        nationalities: 'www.themealdb.com/api/json/v1/1/list.php?a=list',
-        categories: 'www.themealdb.com/api/json/v1/1/list.php?c=list',
-        listByNationality: 'www.themealdb.com/api/json/v1/1/filter.php?a=',
-        listByCategory: 'www.themealdb.com/api/json/v1/1/filter.php?c=',
-        viewRecipe: 'www.themealdb.com/api/json/v1/1/lookup.php?i='
+        nationalities: 'https://www.themealdb.com/api/json/v1/1/list.php?a=list',
+        categories: 'https://www.themealdb.com/api/json/v1/1/list.php?c=list',
+        listByNationality: 'https://www.themealdb.com/api/json/v1/1/filter.php?a=',
+        listByCategory: 'https://www.themealdb.com/api/json/v1/1/filter.php?c=',
+        viewRecipe: 'https://www.themealdb.com/api/json/v1/1/lookup.php?i='
     }
 };
