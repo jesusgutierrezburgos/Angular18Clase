@@ -26,6 +26,7 @@ export class FormModalComponent {
       strArea: new FormControl('', Validators.required), // Área o país
       strIngredient1: new FormControl('', Validators.required), // Ingredientes
       strInstructions: new FormControl('', Validators.required), // Instrucciones
+      strYoutube: new FormControl('', Validators.required), // URL de YouTube
     });
   }
 

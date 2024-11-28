@@ -121,15 +121,20 @@ export class ListRecipesComponent {
 
   async deleteRecipe(event: any, idMeal: string) {
     event.stopPropagation();
-    try {
-      console.log(idMeal)
-      // Llamamos a la función deleteRecipe del servicio FireService para eliminar la receta
-      await this.fire.deleteRecipe(idMeal);
-      console.log('Receta eliminada con éxito');
 
-    } catch (error) {
-      console.error('Error al eliminar la receta:', error);
+    // Mostrar el cuadro de confirmación
+    const confirmDelete = confirm('¿Estás seguro de que deseas eliminar esta receta?');
+
+    if (confirmDelete) {
+      try {
+        console.log(idMeal)
+        // Llamamos a la función deleteRecipe del servicio FireService para eliminar la receta
+        await this.fire.deleteRecipe(idMeal);
+        console.log('Receta eliminada con éxito');
+
+      } catch (error) {
+        console.error('Error al eliminar la receta:', error);
+      }
     }
   }
-
 }

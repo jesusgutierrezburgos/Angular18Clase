@@ -81,7 +81,7 @@
           <textarea
             formControlName="strIngredient1"
             class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2"
-            rows="4"
+            rows="3"
             placeholder="Ingrese los ingredientes de la receta"
           ></textarea>
           <label class="block text-sm font-medium text-gray-700"
@@ -90,9 +90,18 @@
           <textarea
             formControlName="strInstructions"
             class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2"
-            rows="4"
+            rows="3"
             placeholder="Ingrese las instrucciones de la receta"
           ></textarea>
+          <label class="block text-sm font-medium text-gray-700"
+            >Enlace de la Receta</label
+          >
+          <input
+            formControlName="strYoutube"
+            type="text"
+            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 p-2"
+            placeholder="Ingrese la URL del video de la receta"
+          />
         </div>
         <button
           [disabled]="recipeForm.invalid"
